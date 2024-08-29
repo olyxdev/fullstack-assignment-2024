@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:16.4-alpine3.20
+    container_name: postgres-assignment
+    environment:
+      POSTGRES_DB: olyx-olympics
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - '5434:5432'
+    volumes:
+      - ./data:/var/lib/postgresql/data
+      - ./database/scripts:/docker-entrypoint-initdb.d

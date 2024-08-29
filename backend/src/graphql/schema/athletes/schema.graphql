@@ -1,0 +1,9 @@
+extend type Query {
+  athletes: [Athlete!]!
+}
+
+type Athlete {
+  id: String!
+  name: String!
+  country: Country!
+}

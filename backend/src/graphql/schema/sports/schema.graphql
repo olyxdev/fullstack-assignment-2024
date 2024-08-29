@@ -1,0 +1,9 @@
+extend type Query {
+  sports: [Sport!]!
+}
+
+type Sport {
+  id: String!
+  name: String!
+  Athlete: [Athlete!]!
+}
