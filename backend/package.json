@@ -1,0 +1,26 @@
+{
+  "author": "data@olyx.nl",
+  "dependencies": {
+    "@apollo/server": "4.11.0",
+    "cors": "2.8.5",
+    "graphql": "16.9.0",
+    "graphql-scalars": "1.23.0"
+  },
+  "description": "Olyx assignment for full-stack developer position.",
+  "devDependencies": {
+    "@eddeee888/gcg-typescript-resolver-files": "0.10.4",
+    "@graphql-codegen/cli": "5.0.2",
+    "@types/cors": "2.8.17",
+    "@types/node": "22.5.0",
+    "typescript": "5.5.4"
+  },
+  "license": "MIT",
+  "name": "full-stack-assignment-2024",
+  "scripts": {
+    "compile": "yarn codegen && tsc",
+    "start": "node ./dist/index.js",
+    "codegen": "graphql-codegen-esm --config codegen.ts"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}

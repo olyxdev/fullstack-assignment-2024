@@ -1,0 +1,23 @@
+type Athlete {
+  country: Country!
+  id: String!
+  name: String!
+}
+
+type Country {
+  code: String!
+  id: ID!
+  name: String!
+}
+
+type Query {
+  athletes: [Athlete!]!
+  countries: [Country!]!
+  sports: [Sport!]!
+}
+
+type Sport {
+  Athlete: [Athlete!]!
+  id: String!
+  name: String!
+}
